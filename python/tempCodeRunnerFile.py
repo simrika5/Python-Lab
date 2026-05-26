@@ -1,4 +1,7 @@
-for i in range(1,6):
-    for j in range(5,5-i,-1):
-        print(j, end="")
-    print()
+num=int(input("Enter a number: "))
+reversed_num=0
+while num>0:
+    digit=num%10
+    reversed_num=reversed_num*10+digit
+    num=num//10
+print("The reversed number is: ",reversed_num)    
